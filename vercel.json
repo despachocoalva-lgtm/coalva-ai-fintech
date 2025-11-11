@@ -5,22 +5,12 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist",
-        "includeFiles": ["dist/**"]
+        "distDir": "dist"
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/aviso-de-privacidad",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/(.*)",
-      "dest": "/index.html"
-    }
-  ],
   "rewrites": [
+    { "source": "/aviso-de-privacidad", "destination": "/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
