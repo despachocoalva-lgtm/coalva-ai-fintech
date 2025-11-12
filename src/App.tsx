@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPage from "./pages/PrivacyPage";
+import TermsPage from "./pages/TermsPage";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/aviso-de-privacidad" element={<PrivacyPage />} />
+            <Route path="/terminos-y-condiciones" element={<TermsPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

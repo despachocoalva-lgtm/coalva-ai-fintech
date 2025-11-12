@@ -8,6 +8,8 @@ export default function PrivacyPage() {
 
   useEffect(() => {
     document.title = "Aviso de Privacidad | COALVA";
+    // Desplazar al inicio de la página al cargar
+    window.scrollTo(0, 0);
   }, []);
 
   return (
