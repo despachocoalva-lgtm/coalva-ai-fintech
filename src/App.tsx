@@ -3,7 +3,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
 import Index from "./pages/Index";
 import ServicePage from "./pages/ServicePage";
 import NotFound from "./pages/NotFound";
@@ -13,10 +12,6 @@ import TermsPage from "./pages/TermsPage";
 const queryClient = new QueryClient();
 
 const App = () => {
-  useEffect(() => {
-    document.title = "COALVA - Despacho Contable con Inteligencia Artificial | México";
-  }, []);
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
