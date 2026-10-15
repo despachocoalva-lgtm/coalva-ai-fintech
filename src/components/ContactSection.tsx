@@ -1,15 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { whatsappLink, trackWhatsAppClick } from "@/lib/whatsappTracking";
  
 
 const ContactSection = () => {
   const handleWhatsApp = () => {
-    const phone = "525545428322"; // WhatsApp number (Mexico +52)
-    const message = encodeURIComponent(
-      "Hola, me gustaría obtener más información sobre los servicios de COALVA."
-    );
-    window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+    trackWhatsAppClick("landing-contacto");
+    window.open(whatsappLink("Página principal - contacto"), "_blank", "noopener,noreferrer");
   };
 
 
