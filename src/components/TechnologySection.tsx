@@ -6,22 +6,22 @@ const features = [
   {
     icon: LineChart,
     title: "Reportes en tiempo real",
-    description: "Visualiza tus métricas financieras actualizadas al instante con dashboards interactivos.",
+    description: "Organiza indicadores y genera reportes para dar seguimiento a tu negocio.",
   },
   {
     icon: Shield,
-    title: "Cumplimiento fiscal automatizado",
-    description: "Mantente siempre al día con las obligaciones fiscales gracias a nuestra IA predictiva.",
+    title: "Apoyo al cumplimiento fiscal",
+    description: "Usamos herramientas digitales para revisar información y apoyar el seguimiento de obligaciones.",
   },
   {
     icon: Zap,
-    title: "Análisis predictivo",
-    description: "Anticipa flujos de efectivo y optimiza tu planeación financiera con machine learning.",
+    title: "Planeación financiera",
+    description: "Analizamos información financiera para preparar presupuestos y escenarios.",
   },
   {
     icon: Brain,
-    title: "Aprendizaje continuo",
-    description: "Nuestra IA se adapta a tu negocio, mejorando constantemente su precisión.",
+    title: "Automatización supervisada",
+    description: "Evaluamos tareas repetitivas que puedan automatizarse con validación humana.",
   },
 ];
 
@@ -49,9 +49,9 @@ const TechnologySection = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground">
-              Nuestra plataforma analiza tus movimientos financieros, detecta
-              patrones y optimiza tus procesos fiscales con IA de aprendizaje
-              continuo.
+              Aplicamos herramientas digitales y automatización a tareas
+              administrativas y financieras, con supervisión profesional
+              según las necesidades de cada empresa.
             </p>
 
             {/* Features Grid */}
