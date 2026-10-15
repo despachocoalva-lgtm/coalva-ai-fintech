@@ -6,25 +6,25 @@ const benefits = [
     icon: UserCheck,
     title: "IA con revisión humana",
     description:
-      "Lo mejor de ambos mundos: velocidad y precisión de la IA, supervisada por contadores certificados.",
+      "Lo mejor de ambos mundos: velocidad y precisión de la IA, con revisión profesional.",
   },
   {
     icon: TrendingUp,
     title: "Reportes financieros precisos",
     description:
-      "Dashboards en tiempo real con análisis profundo de tu situación financiera y proyecciones inteligentes.",
+      "Organización y análisis de información para facilitar decisiones financieras.",
   },
   {
     icon: Lock,
-    title: "Seguridad nivel empresarial",
+    title: "Manejo responsable de información",
     description:
-      "Tus datos protegidos con encriptación de grado bancario y cumplimiento de estándares internacionales.",
+      "Tratamos la documentación contable y fiscal con controles acordes al servicio contratado.",
   },
   {
     icon: CheckCircle2,
     title: "Asesoría continua personalizada",
     description:
-      "Soporte estratégico cuando lo necesites, con recomendaciones adaptadas a tu industria y objetivos.",
+      "Atención de acuerdo con las necesidades y obligaciones de tu negocio.",
   },
 ];
 
@@ -70,18 +70,18 @@ const WhyUsSection = () => {
           <div className="grid md:grid-cols-2 gap-8 text-center">
             <div>
               <div className="text-4xl lg:text-5xl font-bold text-gradient mb-2">
-                10 años
+                Desde 2015
               </div>
               <div className="text-muted-foreground">
-                De experiencia contable
+                Trayectoria de COALVA
               </div>
             </div>
             <div>
               <div className="text-4xl lg:text-5xl font-bold text-gradient mb-2">
-                99.8%
+                Nacional
               </div>
               <div className="text-muted-foreground">
-                Satisfacción del cliente
+                Atención remota en México
               </div>
             </div>
           </div>
