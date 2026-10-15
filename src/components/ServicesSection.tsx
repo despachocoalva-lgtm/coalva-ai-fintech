@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Bot, FileCheck, TrendingUp, Users } from "lucide-react";
 
 const services = [
   {
+    slug: "automatizacion-contable",
     icon: Bot,
     title: "Contabilidad Automatizada",
     description:
@@ -11,6 +13,7 @@ const services = [
     color: "primary",
   },
   {
+    slug: "declaraciones-y-asesoria-fiscal",
     icon: FileCheck,
     title: "Cumplimiento Fiscal",
     description:
@@ -18,6 +21,7 @@ const services = [
     color: "secondary",
   },
   {
+    slug: "auditoria-fiscal-financiera",
     icon: TrendingUp,
     title: "Estrategia Fiscal Inteligente",
     description:
@@ -25,6 +29,7 @@ const services = [
     color: "primary",
   },
   {
+    slug: "contabilidad-para-empresas",
     icon: Users,
     title: "Asesoría Personalizada",
     description:
@@ -76,13 +81,10 @@ const ServicesSection = () => {
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={scrollToContact}
+                asChild
                 className="text-primary hover:text-primary hover:bg-primary/10 group/btn"
               >
-                Saber más
-                <span className="ml-2 group-hover/btn:translate-x-1 transition-transform inline-block">
-                  →
-                </span>
+                <Link to={`/servicios/${service.slug}`}>Saber más <span className="ml-2">→</span></Link>
               </Button>
             </Card>
           ))}
