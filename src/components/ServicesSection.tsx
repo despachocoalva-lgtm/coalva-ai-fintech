@@ -9,7 +9,7 @@ const services = [
     icon: Bot,
     title: "Contabilidad Automatizada",
     description:
-      "Procesa facturas, concilia cuentas y genera reportes sin intervención manual. Nuestra IA trabaja 24/7 para mantener tus registros impecables.",
+      "Exploramos automatizaciones para organizar facturas, facilitar conciliaciones y generar reportes con revisión humana.",
     color: "primary",
   },
   {
@@ -17,7 +17,7 @@ const services = [
     icon: FileCheck,
     title: "Cumplimiento Fiscal",
     description:
-      "Mantente al día con todas tus obligaciones fiscales. Cálculo automático de impuestos, presentación oportuna y alertas preventivas.",
+      "Revisamos tus obligaciones y te apoyamos en la preparación de declaraciones y el seguimiento fiscal.",
     color: "secondary",
   },
   {
@@ -25,15 +25,15 @@ const services = [
     icon: TrendingUp,
     title: "Estrategia Fiscal Inteligente",
     description:
-      "Optimiza tu carga fiscal con recomendaciones personalizadas basadas en análisis de datos históricos y proyecciones inteligentes.",
+      "Analizamos tu información para identificar riesgos fiscales y oportunidades legales de mejora.",
     color: "primary",
   },
   {
     slug: "contabilidad-para-empresas",
     icon: Users,
-    title: "Asesoría Personalizada",
+    title: "Contabilidad para PYMES",
     description:
-      "Combina el poder de la IA con la experiencia de nuestros contadores certificados. Asesoría estratégica cuando más la necesitas.",
+      "Atención contable y financiera orientada a las necesidades de tu empresa, con herramientas digitales.",
     color: "secondary",
   },
 ];
