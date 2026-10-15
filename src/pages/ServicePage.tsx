@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { whatsappLink, trackWhatsAppClick } from "@/lib/whatsappTracking";
 
 type Service = { slug: string; title: string; intro: string; features: { title: string; body: string }[]; question: string; answer: string };
 const services: Service[] = [
@@ -117,7 +118,7 @@ const ServicePage = () => {
       <section className="max-w-4xl mx-auto text-center mb-16">
         <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">{service.title}</h1>
         <p className="text-lg lg:text-xl text-muted-foreground mb-8">{service.intro}</p>
-        <a href="https://wa.me/525545428322?text=Hola%2C%20quiero%20una%20asesor%C3%ADa%20sobre%20los%20servicios%20de%20COALVA" target="_blank" rel="noopener noreferrer" className="inline-flex px-7 py-4 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90">Solicitar asesoría gratuita</a>
+        <a href={whatsappLink(service.title)} onClick={() => trackWhatsAppClick(service.slug)} target="_blank" rel="noopener noreferrer" className="inline-flex px-7 py-4 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90">Solicitar asesoría gratuita</a>
       </section>
       <section className="grid md:grid-cols-2 gap-6 mb-16" aria-label="Qué incluye el servicio">
         {service.features.map(f => <article key={f.title} className="rounded-2xl bg-card/50 border border-primary/20 p-8"><h2 className="text-2xl font-bold mb-4">{f.title}</h2><p className="text-muted-foreground">{f.body}</p></article>)}
