@@ -21,7 +21,7 @@ for (const s of services) {
     .replace(/<meta property="og:url"[^>]*>/, `<meta property="og:url" content="${url}" />`)
     .replace(/<meta property="og:title"[^>]*>/, `<meta property="og:title" content="${escapeHtml(title)}" />`)
     .replace(/<meta property="og:description"[^>]*>/, `<meta property="og:description" content="${escapeHtml(description)}" />`)
-    .replace(/<div id="root">[\s\S]*?<\/div>\s*<script type="module"/, `<div id="root">${article}</div><script type="module"`);
+    .replace(/<div id="root">[\\s\\S]*?(?=<script type="module")/, `<div id="root">${article}</div>\n    `);
   const dir = join("dist", "servicios", s.slug);
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, "index.html"), html);
