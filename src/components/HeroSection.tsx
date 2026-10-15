@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroDashboard from "@/assets/hero-dashboard.png";
+import { whatsappLink, trackWhatsAppClick } from "@/lib/whatsappTracking";
 
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
@@ -41,17 +42,18 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl">
-              Automatizamos tu contabilidad con inteligencia artificial para que
-              tomes decisiones financieras con total confianza.
+              Servicios contables y fiscales para empresas en México. Combinamos
+              asesoría profesional y automatización para ayudarte a cumplir
+              tus obligaciones y tomar mejores decisiones.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                onClick={() => scrollToSection("contacto")}
+                onClick={() => { trackWhatsAppClick("landing-hero"); window.open(whatsappLink("Página principal - asesoría"), "_blank", "noopener,noreferrer"); }}
                 className="bg-gradient-primary text-foreground font-semibold hover:opacity-90 transition-opacity glow-primary group"
               >
-                Solicita una demo gratuita
+                Agenda una asesoría gratuita
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
@@ -67,22 +69,16 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div>
-                <div className="text-3xl lg:text-4xl font-bold text-gradient">98%</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Precisión
-                </div>
+                <div className="text-lg lg:text-xl font-bold text-gradient">SAT</div>
+                <div className="text-sm text-muted-foreground mt-1">Cumplimiento fiscal</div>
               </div>
               <div>
-                <div className="text-3xl lg:text-4xl font-bold text-gradient">24/7</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Monitoreo
-                </div>
+                <div className="text-lg lg:text-xl font-bold text-gradient">México</div>
+                <div className="text-sm text-muted-foreground mt-1">Atención digital</div>
               </div>
               <div>
-                <div className="text-3xl lg:text-4xl font-bold text-gradient">-70%</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Tiempo ahorrado
-                </div>
+                <div className="text-lg lg:text-xl font-bold text-gradient">IA</div>
+                <div className="text-sm text-muted-foreground mt-1">Automatización con revisión</div>
               </div>
             </div>
           </div>
